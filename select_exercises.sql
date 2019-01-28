@@ -9,4 +9,4 @@ select '' as "Albums released in the 1990s",name from albums where release_date 
 
 select '' as "Less than 20 million certified sales" , name from albums where sales between 0 and 20;
 
-select '' as "Rock genre", artist, from albums where genre = 'rock';
+select '' as "Rock genre", artist from albums where genre = 'rock';
