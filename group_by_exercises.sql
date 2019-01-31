@@ -11,7 +11,7 @@ where last_name like 'e%'
   order by dups desc, last_name;
 
 
-  select 'employees with a ''q'' in their last name but not ''qu''' as 'Exercise 2-6';
+  select 'employees with a ''q'' in their last name but not ''qu''' as 'Exercise 3';
 select last_name, count(last_name) from employees
 where last_name like '%q%'
   and last_name not like '%qu%'
