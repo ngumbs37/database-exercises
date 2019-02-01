@@ -9,6 +9,14 @@ where hire_date in (
 )
 order by emp_no;
 
+select title
+from titles
+where emp_no in (
+  select emp_no
+  from employees
+  where first_name = 'aamod'
+);
+
 select title, count(title)
 from titles
 where emp_no in (
